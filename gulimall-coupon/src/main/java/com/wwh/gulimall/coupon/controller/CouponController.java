@@ -30,6 +30,11 @@ public class CouponController {
     @Autowired
     private CouponService couponService;
 
+    @RequestMapping("/test")
+    private R test(){
+        return R.ok("test").put("test","ok");
+    }
+
     /**
      * 列表
      */
